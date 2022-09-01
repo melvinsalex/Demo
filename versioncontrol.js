@@ -102,7 +102,7 @@ const searchData = (word) => {
 }
 
 
-function authorsWorked(arr, key) {
+function authorsWorked(version, key) {
     let arrAuthor = [];
 
     version.forEach((x) => {
