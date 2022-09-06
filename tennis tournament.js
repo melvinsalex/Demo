@@ -1,4 +1,3 @@
-
 //grand slam draw 
 
 players = [
@@ -60,8 +59,6 @@ const matches = (player) => {
     //console.log("sorted players list ",sortedPlayers);
 
     group = []
-    p1 = 0
-    p2 = 0
     for (let j = 0; j < player.length / 2; j++) {
 
         group.push(sortedPlayers[j].name + " - VS - " + sortedPlayers[sortedPlayers.length - 1 - j].name)
@@ -109,10 +106,10 @@ const grandSlamDraw = (players) => {
             console.log("Number of players",nextRound.length)
             console.log("---------------------------")
 
-            round_2 = []
-            nextRound.forEach(i => { round_2.push(searchData(i)) });
+            upcomingRound = []
+            nextRound.forEach(i => { upcomingRound.push(searchData(i)) });
             nextRound_PlayersList = []
-            round_2.forEach(k => {
+            upcomingRound.forEach(k => {
                 nextRound_PlayersList.push(k[0]);
             });
             players = (nextRound_PlayersList)
